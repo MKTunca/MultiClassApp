@@ -31,19 +31,19 @@ namespace ConsoleApp3
             while (true)
             {
                 string answer;
-                Console.Write("Do you want to return back to home...? Y/N");
+                Consol();
                 answer = Console.ReadLine();
                 if (answer == "Y")
                 {
                     run.Run();
                 }
-               else if (answer == "N")
+                else if (answer == "N")
                 {
                     SumofMultiple();
                 }
                 else
                 {
-                    break;
+                    Consol();
                 }
             }
             Console.ReadLine();
@@ -61,6 +61,10 @@ namespace ConsoleApp3
             int ans = a * sum;
 
             return ans;
+        }
+        public void Consol()
+        {
+            Console.Write("Do you want to return back to home...? Y/N");
         }
     }
 }
