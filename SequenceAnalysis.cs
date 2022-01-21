@@ -35,7 +35,7 @@ namespace ConsoleApp3
             while (true)
             {
                 string answer;
-                Console.Write("Do you want to return back to home...? Y/N");
+                Consol();
                 answer = Console.ReadLine();
                 if (answer== "Y")
                 {
@@ -47,11 +47,14 @@ namespace ConsoleApp3
                 }
                 else
                 {
-                    break;
+                    Consol();
                 }
             }
             Console.ReadLine();
-        
+        }
+        public void Consol()
+        {
+            Console.Write("Do you want to return back to home...? Y/N");
         }
     }
 }
