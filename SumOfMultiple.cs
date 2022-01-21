@@ -37,7 +37,7 @@ namespace ConsoleApp3
                 {
                     run.Run();
                 }
-                if (answer == "N")
+               else if (answer == "N")
                 {
                     SumofMultiple();
                 }
