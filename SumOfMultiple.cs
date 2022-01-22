@@ -13,14 +13,18 @@ namespace ConsoleApp3
             Runner2 run = new Runner2();
             Console.Write("Choose a number = ");
             string b = Console.ReadLine();
-
             if (b == "3" || b == "5")
             {
                 int a = Convert.ToInt32(b);
+                int number;
                 Console.Write("Choose a limit = ");
                 string M = Console.ReadLine();
+                while (!int.TryParse(M, out number))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    SumofMultiple();
+                }
                 int N = Convert.ToInt32(M);
-
                 Console.WriteLine("Sum of multiples of " + a +
                  " up to " + N + " = " + Calculate_sum(a, N));
             }
