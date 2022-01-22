@@ -13,10 +13,10 @@ namespace ConsoleApp3
             Runner2 run = new Runner2();
             Console.Write("Choose a number = ");
             string b = Console.ReadLine();
-            int a = Convert.ToInt32(b);
 
-            if (a == 3 || a == 5)
+            if (b == "3" || b == "5")
             {
+                int a = Convert.ToInt32(b);
                 Console.Write("Choose a limit = ");
                 string M = Console.ReadLine();
                 int N = Convert.ToInt32(M);
@@ -46,7 +46,6 @@ namespace ConsoleApp3
                     Consol();
                 }
             }
-            Console.ReadLine();
         }
         static int Calculate_sum(int a, int N)
         {
