@@ -25,8 +25,16 @@ namespace ConsoleApp3
                     SumofMultiple();
                 }
                 int N = Convert.ToInt32(M);
-                Console.WriteLine("Sum of multiples of " + a +
+                if(N>=a)
+                {
+                    Console.WriteLine("Sum of multiples of " + a +
                  " up to " + N + " = " + Calculate_sum(a, N));
+                }
+                else
+                {
+                    Console.WriteLine("Limit must be greater then or equal to the number");
+                    SumofMultiple();
+                }
             }
             else
             {
